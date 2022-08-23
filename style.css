@@ -1,0 +1,20 @@
+/* Font awesome link  */
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&family=Lobster&family=Poppins:wght@400;600&family=Prompt&display=swap");
+
+/* CSS rules to specify families */
+.berkshire-swash {
+  font-family: "Berkshire Swash", cursive;
+  color: #ff5e19;
+  font-weight: bold;
+}
+
+.bg-banner {
+  background-color: #000000;
+}
+
+.bg-color {
+  background-color: #0d0d0d;
+}
+.btn-color {
+  background-color: #0d0d0d;
+}
