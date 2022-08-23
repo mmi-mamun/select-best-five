@@ -10,17 +10,18 @@ for(let i=0;i<btns.length;i++){
             players(i); // calling the function in common.js for every player selection
         }
         else{
-            alert("Maximum players are selected.");
+            alert("You've already selected maximum 5 players. Now, press OK and participate in next step...");
         }
     } )
 }
 
 
 
+
 // event handler for player cost 
 
 function playerCost(){
-    const perPlayerCost = parseInt(document.getElementById("per_player_cost").value);
+    const perPlayerCost = parseFloat(document.getElementById("per_player_cost").value);
     var playerCount = document.querySelectorAll(".player_name");
     let playerExpenses = document.getElementById("player_expenses");
     const playerNumber = playerCount.length;
@@ -28,12 +29,15 @@ function playerCost(){
 }
 
 
+
+
 //Total cost calculate function using event listener
+
 const buttonTotal = document.getElementById("btn_total");
 buttonTotal.addEventListener("click", function(){
-    let coachFee = parseInt(document.getElementById("coach_fee").value);
-    let managerFee = parseInt(document.getElementById("manager_fee").value);
-    let playerExpenses = parseInt(document.getElementById("player_expenses").textContent);
+    let coachFee = parseFloat(document.getElementById("coach_fee").value);
+    let managerFee = parseFloat(document.getElementById("manager_fee").value);
+    let playerExpenses = parseFloat(document.getElementById("player_expenses").textContent);
 
     let total = document.getElementById("total");
     total.innerText = playerExpenses + coachFee + managerFee;
