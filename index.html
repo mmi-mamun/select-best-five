@@ -250,6 +250,73 @@
               </div>
             </div>
             <!-- Selected player list portion End  -->
+
+            <div class="row mt-4">
+              <div class="card bg-color">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Budget</h5>
+                  <img src="images/others/Ureg-Ureg Marker.png" alt="" />
+                  <div class="input-group my-3">
+                    <span
+                      class="input-group-text text-light btn-color"
+                      id="inputGroup-sizing-default"
+                      style="width: 100px"
+                      >Per Player</span
+                    >
+                    <input
+                      id="per_player_cost"
+                      type="number"
+                      class="form-control"
+                      aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-default"
+                    />
+                  </div>
+                  <button id="player_cost" class="btn btn-primary mb-4 w-100">
+                    Calculate
+                  </button>
+                  <h5 class="mt-4 mb-3">
+                    Player Expenses $ <span id="player_expenses">0</span>
+                  </h5>
+                  <div class="input-group mb-3">
+                    <span
+                      class="input-group-text text-light btn-color"
+                      id="inputGroup-sizing-default"
+                      style="width: 100px"
+                      >Manager</span
+                    >
+                    <input
+                      id="manager_fee"
+                      type="number"
+                      class="form-control"
+                      aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-default"
+                    />
+                  </div>
+                  <div class="input-group mb-3">
+                    <span
+                      class="input-group-text text-light btn-color"
+                      id="inputGroup-sizing-default"
+                      style="width: 100px"
+                      >Coach</span
+                    >
+                    <input
+                      id="coach_fee"
+                      type="number"
+                      class="form-control"
+                      aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-default"
+                    />
+                  </div>
+                  <button class="btn btn-primary w-100" id="btn_total">
+                    Calculate Total
+                  </button>
+                  <h5 class="my-3">
+                    Total $
+                    <span class="text-bold berkshire-swash" id="total"> 0</span>
+                  </h5>
+                </div>
+              </div>
+            </div>
           </div>
 
           <!-- Functional Section End  -->

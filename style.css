@@ -13,6 +13,10 @@ body {
   font-weight: bold;
 }
 
+.manrope {
+  font-family: "Manrope", sans-serif;
+}
+
 .bg-banner {
   background-color: #000000;
 }
@@ -34,4 +38,11 @@ body {
 /* selection list */
 .top-players {
   min-height: 350px;
+}
+
+hr {
+  width: 100%;
+  padding: 1px;
+  background: #717171;
+  margin-top: 150px;
 }
