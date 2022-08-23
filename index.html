@@ -124,7 +124,7 @@
                     alt="..."
                   />
                   <div class="card-body">
-                    <h5 class="card-title" id="player-0">Ronaldinho Gaúcho</h5>
+                    <h5 class="card-title" id="player-3">Ronaldinho Gaúcho</h5>
                     <p class="card-text">36 Goals : 120 Assists</p>
                     <button
                       class="btn-pl btn btn-outline-secondary text-light bg-primary btn-lg border w-100"
@@ -144,7 +144,7 @@
                   />
 
                   <div class="card-body">
-                    <h5 class="card-title" id="player-1">Di María</h5>
+                    <h5 class="card-title" id="player-4">Di María</h5>
                     <p class="card-text">36 Goals : 120 Assists</p>
                     <button
                       class="btn btn-outline-secondary text-light bg-primary btn-lg border w-100 btn-pl"
@@ -163,7 +163,7 @@
                     alt="..."
                   />
                   <div class="card-body">
-                    <h5 class="card-title" id="player-2">Gabriel Jesus</h5>
+                    <h5 class="card-title" id="player-5">Gabriel Jesus</h5>
                     <p class="card-text">36 Goals : 120 Assists</p>
                     <button
                       class="btn btn-outline-secondary text-light bg-primary btn-lg border w-100 btn-pl"
@@ -182,7 +182,7 @@
                     alt="..."
                   />
                   <div class="card-body">
-                    <h5 class="card-title" id="player-0">Vítor Machado</h5>
+                    <h5 class="card-title" id="player-6">Vítor Machado</h5>
                     <p class="card-text">36 Goals : 120 Assists</p>
                     <button
                       class="btn-pl btn btn-outline-secondary text-light bg-primary btn-lg border w-100"
@@ -202,7 +202,7 @@
                   />
 
                   <div class="card-body">
-                    <h5 class="card-title" id="player-1">Sergio Ramos</h5>
+                    <h5 class="card-title" id="player-7">Sergio Ramos</h5>
                     <p class="card-text">36 Goals : 120 Assists</p>
                     <button
                       class="btn btn-outline-secondary text-light bg-primary btn-lg border w-100 btn-pl"
@@ -221,7 +221,7 @@
                     alt="..."
                   />
                   <div class="card-body">
-                    <h5 class="card-title" id="player-2">Renato Sanches</h5>
+                    <h5 class="card-title" id="player-8">Renato Sanches</h5>
                     <p class="card-text">36 Goals : 120 Assists</p>
                     <button
                       class="btn btn-outline-secondary text-light bg-primary btn-lg border w-100 btn-pl"
@@ -267,16 +267,22 @@
                       id="per_player_cost"
                       type="number"
                       class="form-control"
+                      min="0"
                       aria-label="Sizing example input"
                       aria-describedby="inputGroup-sizing-default"
                     />
                   </div>
-                  <button id="player_cost" class="btn btn-primary mb-4 w-100">
+                  <button
+                    id="player_cost"
+                    onclick="playerCost()"
+                    class="btn btn-primary mb-4 w-100"
+                  >
                     Calculate
                   </button>
-                  <h5 class="mt-4 mb-3">
-                    Player Expenses $ <span id="player_expenses">0</span>
-                  </h5>
+                  <p class="mb-3 d-flex justify-content-between">
+                    <span>Player Expenses</span>
+                    <span>$ <span id="player_expenses">0</span></span>
+                  </p>
                   <div class="input-group mb-3">
                     <span
                       class="input-group-text text-light btn-color"
@@ -288,6 +294,7 @@
                       id="manager_fee"
                       type="number"
                       class="form-control"
+                      min="0"
                       aria-label="Sizing example input"
                       aria-describedby="inputGroup-sizing-default"
                     />
@@ -303,6 +310,7 @@
                       id="coach_fee"
                       type="number"
                       class="form-control"
+                      min="0"
                       aria-label="Sizing example input"
                       aria-describedby="inputGroup-sizing-default"
                     />
@@ -310,10 +318,15 @@
                   <button class="btn btn-primary w-100" id="btn_total">
                     Calculate Total
                   </button>
-                  <h5 class="my-3">
-                    Total $
-                    <span class="text-bold berkshire-swash" id="total"> 0</span>
-                  </h5>
+                  <p class="my-3 d-flex justify-content-between">
+                    <span>Total</span>
+                    <span>
+                      $
+                      <span class="text-bold berkshire-swash" id="total"
+                        >0</span
+                      ></span
+                    >
+                  </p>
                 </div>
               </div>
             </div>
