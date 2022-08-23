@@ -1,6 +1,11 @@
 /* Font awesome link  */
 @import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&family=Lobster&family=Poppins:wght@400;600&family=Prompt&display=swap");
 
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
 /* CSS rules to specify families */
 .berkshire-swash {
   font-family: "Berkshire Swash", cursive;
@@ -17,4 +22,15 @@
 }
 .btn-color {
   background-color: #0d0d0d;
+}
+
+/* main section  */
+.main-container,
+.default-background {
+  background-color: #151515;
+}
+
+/* selection list */
+.top-players {
+  min-height: 350px;
 }
